@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trey Cole | Publications</title>
-  
+  <title>Trey Cole</title>
 
   <!-- Google Fonts: Lato, Merriweather, Roboto Mono -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +31,15 @@
       font-family: 'Lato', sans-serif;
       background-color: #fff; /* light theme background */
       color: #333;
-      line-height: 1.9;
+      line-height: 2.0;
       min-height: 100vh;
+      font-weight: 550;
       display: flex;
       flex-direction: column;
       transition: background-color 0.4s, color 0.4s;
     }
     a {
-      color: #333;
+      color: #73a2d1;
       text-decoration: none;
       transition: color 0.4s;
     }
@@ -50,24 +50,36 @@
     /* Navigation Bar */
     nav {
       background-color: #f8f8f8;
-      padding: 10px 20px;
+      padding: 10px 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid #ddd;
+      transition: background-color 0.4s, color 0.4s, border-color 0.4s;
     }
     nav .navbar-brand {
-      font-size: 1.1rem;
-      font-weight: 700;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
     nav ul {
       list-style: none;
       display: flex;
-      gap: 15px;
-      font-size: 1rem
+      gap: 30px;
+      font-size: 1rem;
     }
     nav ul li {
       display: inline;
+    }
+    nav a {
+      color: #333;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1;
+      display: inline-block; /* ensures consistent box dimensions */
+      padding: 10px 0;       /* fixed vertical padding */
+    }
+    nav a:hover {
+      color: #007bff;
     }
 
     /* Main Container */
@@ -115,8 +127,13 @@
       padding-bottom: 8px;
       margin-bottom: 20px;
     }
+     /* Increase spacing for list items */
+    section ol li,
+    section ul li {
+     margin-bottom: 2px;
+    }
     p {
-      margin-bottom: 16px;
+      margin-bottom: 2px;
     }
     
     /* Footer */
@@ -136,9 +153,14 @@
       border-radius: 20px;
       cursor: pointer;
       transition: background-color 0.4s, color 0.4s;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #theme-toggle:hover {
-      background-color: #7cafe6;
+      background-color: #007bff;
       color: #fff;
     }
 
@@ -156,9 +178,7 @@
     body.dark-theme nav a {
       color: #fff;
     }
-    body.dark-theme nav a:hover {
-      color: #007bff;
-    }
+
     body.dark-theme nav {
       background-color: #272935;
       border-bottom: 1px solid #3a3c47;
@@ -179,12 +199,36 @@
     }
 
     body.dark-theme a {
-      color: #f2f2f2;
+      color: #73a2d1;
     }
     body.dark-theme a:hover {
       color: #007bff;
     }
-</style>
+
+    ul.education {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.education li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: "Font Awesome 6 Free";
+      content: "\f19d"; /* Graduation cap Unicode */
+      font-weight: 800;
+      margin-right: 8px;
+      /* Optionally, adjust vertical alignment: */
+      line-height: 1.2;
+    }
+    ul.education li {
+      position: relative;
+      padding-left: 1.8em; /* Adjust as needed */
+    }
+  
+
+    /* You can add further overrides as needed */
+  </style>
 </head>
 
 <body class="dark-theme">
