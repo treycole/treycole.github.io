@@ -1,125 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trey Cole | Physicist</title>
-  <!-- Import Google Fonts for modern typography -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trey Cole | Condensed Matter Theory</title>
+
+  <!-- Google Font: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    crossorigin="anonymous">
+
   <style>
+    /* Reset & Basic Setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Open Sans', sans-serif;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-      background: #eef2f3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #f2f2f2; /* light theme background */
+      color: #333;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.3s, color 0.3s;
     }
-    .container {
-      background: #fff;
-      max-width: 800px;
-      width: 90%;
-      margin: 40px;
-      padding: 40px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav a {
+    a {
       color: #007bff;
       text-decoration: none;
-      font-weight: 600;
-      margin: 0 10px;
-      transition: color 0.3s;
+      transition: color 0.2s;
     }
-    nav a:hover {
+    a:hover {
       color: #0056b3;
-      text-decoration: underline;
     }
-    header {
-      border-bottom: 2px solid #007bff;
-      margin-bottom: 30px;
-      padding-bottom: 15px;
-      text-align: center;
+
+    /* Navigation Bar */
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
     }
-    h1 {
+    nav .nav-left,
+    nav .nav-right {
+      display: flex;
+      gap: 15px;
+    }
+    nav .nav-left a {
+      font-weight: 600;
+    }
+    /* Dark theme button styling */
+    #theme-toggle {
+      background-color: transparent;
+      border: 1px solid #007bff;
       color: #007bff;
-      font-size: 2.5rem;
-      margin: 0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
     }
-    h2 {
-      color: #007bff;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+    #theme-toggle:hover {
+      background-color: #007bff;
+      color: #fff;
     }
-    p {
+
+    /* Main Container */
+    .container {
+      display: flex;
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+    }
+
+    /* Left Column */
+    .left-column {
+      flex: 0 0 300px;
+      border-right: 1px solid #ccc;
+      padding-right: 30px;
+    }
+    .left-column h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+    }
+    .left-column h2 {
       font-size: 1.1rem;
-      margin: 0 0 1em;
+      color: #666;
+      margin-bottom: 1em;
     }
-    section {
-      margin-bottom: 20px;
+    .social-links {
+      display: flex;
+      gap: 15px;
+      font-size: 1.3rem;
+      margin-top: 1em;
     }
-    ul {
+    .social-links a {
+      color: #333;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    /* Right Column */
+    .right-column {
+      flex: 1;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .section-content {
+      margin-bottom: 2em;
+      line-height: 1.7;
+    }
+    .section-content ul {
       list-style: none;
-      padding: 0;
+      margin-top: 1em;
+      padding-left: 0;
     }
-    ul li {
-      margin-bottom: 5px;
+    .section-content ul li {
+      margin-bottom: 0.5em;
     }
+
+    /* Footer */
     footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #777;
+      background-color: #e0e0e0;
       text-align: center;
-      border-top: 1px solid #ddd;
-      padding-top: 10px;
+      padding: 15px 0;
+      color: #555;
+      border-top: 1px solid #ccc;
     }
+
+    /* Dark Theme Overrides */
+    body.dark-theme {
+      background-color: #1b1f24;
+      color: #f2f2f2;
+    }
+    body.dark-theme a {
+      color: #66b2ff;
+    }
+    body.dark-theme nav {
+      background-color: #161b22;
+      border-bottom: 1px solid #333;
+    }
+    body.dark-theme .left-column h2 {
+      color: #bbb;
+    }
+    body.dark-theme footer {
+      background-color: #161b22;
+      color: #ccc;
+      border-top: 1px solid #333;
+    }
+    /* You can add further overrides as needed */
   </style>
 </head>
+
 <body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <!-- <a href="projects.html">Projects</a> -->
+      <a href="publications.html">Publications</a>
+      <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
   <div class="container">
-    <nav>
-      <a href="index.html">Home</a> | 
-      <a href="publications.html">Publications</a> | 
-      <a href="cv.html">Curriculum Vitae</a>
-    </nav>
-    <header>
+    <!-- Left Column -->
+    <div class="left-column">
       <h1>Trey Cole</h1>
-      <p>Physics PhD Student &middot; Condensed Matter Theory</p>
-    </header>
+      <h2>Physics PhD Student</h2>
+      <div class="social-links">
+        <a href="mailto:trey@treycole.me" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/treycole" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=IUnPVogAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+    </div>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a PhD student at Rutgers University studying condensed matter theory, focusing on quantum materials and their fascinating topological properties.
-      </p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        You can reach me at: <a href="mailto:trey@treycole.me">trey@treycole.me</a>
-      </p>
-    </section>
-
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://github.com/treycole">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/trey-cole/">LinkedIn</a></li>
-        <li><a href="https://scholar.google.com/citations?user=IUnPVogAAAAJ&hl=en">Google Scholar</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      &copy; 2025 Trey Cole
-    </footer>
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="section-content">
+        <div class="section-title">Biography</div>
+        <p>
+          I'm a PhD student at Rutgers University studying condensed matter theory, focusing on quantum materials, 
+          topological materials and electronic structure calculations. Prior to this I completed my M.Sc. at TU Delft
+          with an emphasis in Quantum Devices and Quantum Computing, and a B.S. at West Virginia University with an
+          emphasis in Computational Physics. I enjoy coding tools for scientific investigation. You can find my projects
+          on my GitHub. 
+        </p>
+      </div>
+      <div class="section-content">
+        <div class="section-title">Education</div>
+        <ul>
+          <li>PhD in Physics, Rutgers University, 2023—Present</li>
+          <li>M.S. in Applied Physics, Delft University of Technology, 2021—2023</li>
+          <li>B.S. in Physics (summa cum laude), West Virginia University, 2016—2020</li>
+        </ul>
+      </div>
+      <!-- <div class="section-content">
+        <div class="section-title">Projects</div>
+        <ul>
+          <li><strong>Pulsar Verification ML Application:</strong> A machine learning pipeline for verifying pulsar candidates.</li>
+          <li><strong>Brick-Wall Quantum Circuit in Qiskit:</strong> Investigating measurement-induced phase transitions.</li>
+        </ul>
+      </div> -->
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Trey Cole
+  </footer>
+
+  <!-- JavaScript to Toggle Theme -->
+  <script>
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    themeToggleBtn.addEventListener("click", function() {
+      document.body.classList.toggle("dark-theme");
+      // Update button icon based on the theme
+      if (document.body.classList.contains("dark-theme")) {
+        themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+    });
+  </script>
 </body>
 </html>
