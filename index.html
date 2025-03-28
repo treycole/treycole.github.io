@@ -70,9 +70,12 @@
     nav ul li {
       display: inline;
     }
-
     nav a {
       color: #333;
+      font-weight: 500;
+      line-height: 1;
+      display: inline-block; /* ensures consistent box dimensions */
+      padding: 10px 0;       /* fixed vertical padding */
     }
     nav a:hover {
       color: #007bff;
@@ -149,6 +152,11 @@
       border-radius: 20px;
       cursor: pointer;
       transition: background-color 0.4s, color 0.4s;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #theme-toggle:hover {
       background-color: #007bff;
@@ -169,9 +177,7 @@
     body.dark-theme nav a {
       color: #fff;
     }
-    body.dark-theme nav a:hover {
-      color: #007bff;
-    }
+
     body.dark-theme nav {
       background-color: #272935;
       border-bottom: 1px solid #3a3c47;
