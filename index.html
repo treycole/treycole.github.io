@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trey Cole</title>
 
-  <!-- Google Font: Open Sans -->
+  <!-- Google Fonts: Lato, Merriweather, Roboto Mono -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
 
@@ -23,53 +29,48 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f2f2f2; /* light theme background */
+      font-family: 'Lato', sans-serif;
+      background-color: #fff; /* light theme background */
       color: #333;
+      line-height: 1.6;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.4s, color 0.4s;
     }
     a {
-      color: #007bff;
+      color: #333;
       text-decoration: none;
-      transition: color 0.2s;
+      transition: color 0.4s;
     }
     a:hover {
-      color: #0056b3;
+      color: #007bff;
     }
 
     /* Navigation Bar */
     nav {
-      background-color: #e0e0e0;
+      background-color: #f8f8f8;
       padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #ddd;
     }
-    nav .nav-left,
-    nav .nav-right {
+    nav .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
       display: flex;
       gap: 15px;
     }
-    nav .nav-left a {
-      font-weight: 600;
+    nav ul li {
+      display: inline;
     }
-    /* Dark theme button styling */
-    #theme-toggle {
-      background-color: transparent;
-      border: 1px solid #007bff;
-      color: #007bff;
-      padding: 5px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.2s, color 0.2s;
-    }
-    #theme-toggle:hover {
-      background-color: #007bff;
-      color: #fff;
+    nav ul li a {
+      font-size: 1rem;
+      color: #333
     }
 
     /* Main Container */
@@ -81,137 +82,150 @@
     
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     header h1 {
-      font-size: 2.5rem;
-      color: #007bff;
+      font-family: 'Merriweather', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
     header h2 {
-      font-size: 1.1rem;
-      color: #666;
-      margin-top: 5px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.2rem;
+      color: #96979c;
     }
-
+  
     .social-links {
       text-align: center;
-      display: flex;
+      margin: 20px 0;
       font-size: 1.3rem;
-      margin-top: 10px;
-      margin-bottom: 20px;
     }
     .social-links a {
-      margin: 0 8px;
+      margin: 0 10px;
       color: #333;
     }
     .social-links a:hover {
       color: #007bff;
     }
 
-    /* Section Styling */
     section {
       margin-bottom: 40px;
     }
     .section-title {
-      font-size: 1.5rem;
-      color: #030303;
-      border-bottom: 3px solid #ccc;
-      padding-bottom: 10px;
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #96979c;
+      padding-bottom: 8px;
       margin-bottom: 20px;
     }
-    .section-content {
-      margin-top: 20px;
+    p {
+      margin-bottom: 16px;
     }
-
+    
     /* Footer */
     footer {
-      background-color: #e0e0e0;
       text-align: center;
-      padding: 10px 0;
-      color: #555;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+     /* Dark theme button styling */
+    #theme-toggle {
+      background-color: transparent;
+      border: 1px solid #272935;
+      color: #f2f2f2;
+      padding: 5px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.4s, color 0.4s;
+    }
+    #theme-toggle:hover {
+      background-color: #7cafe6;
+      color: #fff;
     }
 
     /* Dark Theme Overrides */
     body.dark-theme {
-      background-color: #1b1f24;
+      background-color: #272935;
       color: #f2f2f2;
     }
     body.dark-theme a {
-      color: #66b2ff;
+      color: #73a2d1;
     }
     body.dark-theme nav {
-      background-color: #161b22;
-      border-bottom: 1px solid #333;
-    }
-    body.dark-theme .left-column h2 {
-      color: #bbb;
+      background-color: #272935;
+      border-bottom: 1px solid #3a3c47;
     }
     body.dark-theme footer {
-      background-color: #161b22;
       color: #ccc;
-      border-top: 1px solid #333;
     }
+    body:not(.dark-theme) #theme-toggle {
+      background-color: transparent;
+      border: 1px solid #f8f8f8;
+      border-radius: 20px;
+      color: #272935;
+    }
+  
+    body:not(.dark-theme) #theme-toggle:hover {
+      background-color: #7cafe6;
+      color: #fff;
+    }
+    body.dark-theme nav a {
+      color: #fff;
+    }
+
     /* You can add further overrides as needed */
   </style>
 </head>
 
-<body>
-
+<body class="dark-theme">
   <!-- Navigation Bar -->
   <nav>
-    <div class="nav-left">
-      <a href="index.html">Home</a>
-      <!-- <a href="projects.html">Projects</a> -->
-      <a href="publications.html">Publications</a>
-      <a href="cv.pdf" target="_blank">CV</a>
-    </div>
+    <div class="navbar-brand"></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.pdf" target="_blank">CV</a></li>
+    </ul>
     <div class="nav-right">
-      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-sun"></i></button>
     </div>
   </nav>
-
+  
   <!-- Main Content -->
   <div class="container">
-    <!-- Left Column -->
-    <div class="left-column">
+    <header>
       <h1>Trey Cole</h1>
-      <div class="social-links">
-        <a href="mailto:trey@treycole.me" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/treycole" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://scholar.google.com/citations?user=IUnPVogAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-      </div>
+      <h2>Physics PhD Student – Condensed Matter Theory</h2>
+    </header>
+    
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="mailto:trey@treycole.me" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/treycole" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=IUnPVogAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
     </div>
-
-    <!-- Right Column -->
-    <div class="right-column">
-      <div class="section-content">
-        <div class="section-title">Biography</div>
-        <p>
-          I'm a PhD student at Rutgers University studying condensed matter theory, focusing on quantum materials, 
-          topological materials and electronic structure calculations. Prior to this I completed my M.Sc. at TU Delft
-          with an emphasis in Quantum Devices and Quantum Computing, and a B.S. at West Virginia University with an
-          emphasis in Computational Physics. I enjoy coding tools for scientific investigation. You can find my projects
-          on my GitHub. 
-        </p>
-      </div>
-      <div class="section-content">
-        <div class="section-title">Education</div>
-        <ul>
-          <li>PhD in Physics, Rutgers University, 2023—Present</li>
-          <li>M.S. in Applied Physics, Delft University of Technology, 2021—2023</li>
-          <li>B.S. in Physics (summa cum laude), West Virginia University, 2016—2020</li>
-        </ul>
-      </div>
-      <!-- <div class="section-content">
-        <div class="section-title">Projects</div>
-        <ul>
-          <li><strong>Pulsar Verification ML Application:</strong> A machine learning pipeline for verifying pulsar candidates.</li>
-          <li><strong>Brick-Wall Quantum Circuit in Qiskit:</strong> Investigating measurement-induced phase transitions.</li>
-        </ul>
-      </div> -->
-    </div>
+    
+    <!-- Biography Section -->
+    <section>
+      <div class="section-title">Biography</div>
+      <p>
+        I'm a PhD student at Rutgers University studying condensed matter theory, focusing on quantum materials and their fascinating topological properties. I enjoy coding tools for scientific investigation and sharing my work with the community.
+      </p>
+    </section>
+    
+    <!-- Education Section -->
+    <section>
+      <div class="section-title">Education</div>
+      <ul>
+        <li>PhD in Physics, Rutgers University, 2023—Present</li>
+        <li>M.S. in Applied Physics, Delft University of Technology, 2021—2023</li>
+        <li>B.S. in Physics (summa cum laude), West Virginia University, 2016—2020</li>
+      </ul>
+    </section>
   </div>
-
+  
   <!-- Footer -->
   <footer>
     &copy; 2025 Trey Cole
@@ -220,9 +234,10 @@
   <!-- JavaScript to Toggle Theme -->
   <script>
     const themeToggleBtn = document.getElementById("theme-toggle");
+    // Set initial icon based on default dark theme
+    themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
     themeToggleBtn.addEventListener("click", function() {
       document.body.classList.toggle("dark-theme");
-      // Update button icon based on the theme
       if (document.body.classList.contains("dark-theme")) {
         themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
       } else {
