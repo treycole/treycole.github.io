@@ -1,3 +1,3 @@
-# treycole.github.io
+# treycole.me
 
-My personal webpage is located at treycole.me.
+This is the repository for my personal webpage, [treycole.me](treycole.me).
