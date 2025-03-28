@@ -25,14 +25,13 @@
     /* Reset & Basic Setup */
     * {
       margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
     body {
       font-family: 'Lato', sans-serif;
       background-color: #fff; /* light theme background */
       color: #333;
-      line-height: 1.6;
+      line-height: 1.9;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -57,21 +56,18 @@
       border-bottom: 1px solid #ddd;
     }
     nav .navbar-brand {
-      font-size: 1.8rem;
+      font-size: 1.1rem;
       font-weight: 700;
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 15px;
+      font-size: 1rem
     }
     nav ul li {
       display: inline;
     }
-    /* nav ul li a {
-      font-size: 1rem;
-      color: #333
-    } */
 
     /* Main Container */
     .container {
@@ -141,7 +137,7 @@
       transition: background-color 0.4s, color 0.4s;
     }
     #theme-toggle:hover {
-      background-color: #007bff;
+      background-color: #7cafe6;
       color: #fff;
     }
 
@@ -180,6 +176,13 @@
       background-color: #007bff;
       color: #fff;
     }
+
+    body.dark-theme a {
+      color: #f2f2f2;
+    }
+    body.dark-theme a:hover {
+      color: #007bff;
+    }
   
 
     /* You can add further overrides as needed */
@@ -204,7 +207,8 @@
   <div class="container">
     <header>
       <h1>Trey Cole</h1>
-      <h2>Physics PhD Student – Condensed Matter Theory</h2>
+      <h2>Physics PhD Student – Rutgers University </h2>
+      <h2>Condensed Matter Theory </h2>
     </header>
     
     <!-- Social Links -->
@@ -218,7 +222,10 @@
     <section>
       <div class="section-title">Biography</div>
       <p>
-        I'm a PhD student at Rutgers University studying condensed matter theory, focusing on quantum materials and their fascinating topological properties. I enjoy coding tools for scientific investigation and sharing my work with the community.
+        I'm a PhD student at Rutgers University specializing in condensed matter theory. My research 
+        focuses on quantum materials, particularly those exhibiting non-trivial topological properties. 
+        I develop computational tools and perform numerical simulations to uncover additional insights into 
+        these materials. Most of my work is open source and available on my <a href="https://github.com/treycole" title="GitHub" target="_blank">GitHub</a>. 
       </p>
     </section>
     
@@ -226,9 +233,12 @@
     <section>
       <div class="section-title">Education</div>
       <ul>
-        <li>PhD in Physics, Rutgers University, 2023—Present</li>
-        <li>M.S. in Applied Physics, Delft University of Technology, 2021—2023</li>
-        <li>B.S. in Physics (summa cum laude), West Virginia University, 2016—2020</li>
+        <li> <strong>PhD in Physics</strong>, Rutgers University, 2023—Present <br>
+        Condensed matter theory </li>
+        <li>M.S. in Applied Physics, Delft University of Technology, 2021—2023<br> 
+        Focus in quantum devices and quantum computing </li>
+        <li>B.S. in Physics (summa cum laude), West Virginia University, 2016—2020<br>
+        Focus in computational physics</li>
       </ul>
     </section>
   </div>
