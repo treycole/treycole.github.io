@@ -1,3 +1,2 @@
 # treycole.me
-
-This is the repository for my personal webpage.
+[Visit my website](https://treycole.me)
