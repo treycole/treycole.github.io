@@ -31,7 +31,7 @@ const defaultOptions: GraphOptions = {
     drag: true,
     zoom: true,
     depth: 1,
-    scale: 1.1,
+    scale: 1,
     repelForce: 0.5,
     centerForce: 0.3,
     linkDistance: 30,
@@ -40,7 +40,7 @@ const defaultOptions: GraphOptions = {
     showTags: true,
     removeTags: [],
     focusOnHover: false,
-    enableRadial: false,
+    enableRadial: true,
   },
   globalGraph: {
     drag: true,
@@ -55,7 +55,7 @@ const defaultOptions: GraphOptions = {
     showTags: true,
     removeTags: [],
     focusOnHover: true,
-    enableRadial: true,
+    enableRadial: false,
   },
 }
 

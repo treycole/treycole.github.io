@@ -97,6 +97,7 @@ export default (() => {
             return resource
           }
         })}
+
       </head>
     )
   }

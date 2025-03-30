@@ -6,35 +6,41 @@
       <description>Last 10 notes on Trey Cole</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Topological Obstructions</title>
-    <link>https://treycole.me/notes/public/topological_obstructions</link>
-    <guid>https://treycole.me/notes/public/topological_obstructions</guid>
-    <description>Ref: Topological Quantum Chemistry Wannier functions of a topologically trivial group of bands are smoothly continuous to an atomic limit, are exponentially localized, and transform under a band representation.</description>
-    <pubDate>Sun, 30 Mar 2025 04:01:56 GMT</pubDate>
+    <title>Berry Phase</title>
+    <link>https://treycole.me/notes/public/physics/berry_phase</link>
+    <guid>https://treycole.me/notes/public/physics/berry_phase</guid>
+    <description>The general definition of the Berry phase is a phase angle (from 0 to 2\pi) that a complex vector acquires as it is transported through a path in its complex vector space.</description>
+    <pubDate>Sun, 30 Mar 2025 04:26:58 GMT</pubDate>
   </item><item>
     <title>Topological Quantum Chemistry</title>
-    <link>https://treycole.me/notes/public/topological_quantum_chem</link>
-    <guid>https://treycole.me/notes/public/topological_quantum_chem</guid>
+    <link>https://treycole.me/notes/public/physics/topological_quantum_chem</link>
+    <guid>https://treycole.me/notes/public/physics/topological_quantum_chem</guid>
     <description>Ref: Bradlyn et.al, Nature, 20 Jul 2017 Question: Topological insulators represent only a few hundred of the 200,000 stoichiometric compounds.</description>
-    <pubDate>Sun, 30 Mar 2025 04:01:09 GMT</pubDate>
+    <pubDate>Sun, 30 Mar 2025 04:26:55 GMT</pubDate>
+  </item><item>
+    <title>Topological Obstructions</title>
+    <link>https://treycole.me/notes/public/physics/topological_obstructions</link>
+    <guid>https://treycole.me/notes/public/physics/topological_obstructions</guid>
+    <description>Ref: Topological Quantum Chemistry Wannier functions of a topologically trivial group of bands are smoothly continuous to an atomic limit, are exponentially localized, and transform under a band representation.</description>
+    <pubDate>Sun, 30 Mar 2025 04:26:53 GMT</pubDate>
   </item><item>
     <title>Wannier Functions</title>
-    <link>https://treycole.me/notes/public/wannier_functions</link>
-    <guid>https://treycole.me/notes/public/wannier_functions</guid>
+    <link>https://treycole.me/notes/public/physics/wannier_functions</link>
+    <guid>https://treycole.me/notes/public/physics/wannier_functions</guid>
     <description>Wannier functions are the localized representation of the Bloch energy eigenstates of a periodic crystal.</description>
-    <pubDate>Sun, 30 Mar 2025 03:56:13 GMT</pubDate>
+    <pubDate>Sun, 30 Mar 2025 04:26:50 GMT</pubDate>
   </item><item>
-    <title>Berry Phase</title>
-    <link>https://treycole.me/notes/public/berry_phase</link>
-    <guid>https://treycole.me/notes/public/berry_phase</guid>
-    <description>The general definition of the Berry phase is a phase angle (from 0 to 2\pi) that a complex vector acquires as it is transported through a path in its complex vector space.</description>
-    <pubDate>Sun, 30 Mar 2025 03:15:29 GMT</pubDate>
+    <title>Physics notes</title>
+    <link>https://treycole.me/notes/public/physics/</link>
+    <guid>https://treycole.me/notes/public/physics/</guid>
+    <description></description>
+    <pubDate>Sun, 30 Mar 2025 04:25:17 GMT</pubDate>
   </item><item>
-    <title>Trey Cole</title>
+    <title>Welcome to my digitial garden! 🪴🌱</title>
     <link>https://treycole.me/notes/public/</link>
     <guid>https://treycole.me/notes/public/</guid>
-    <description>Welcome to my digitial garden! 🪴🌱 This is where my notes exist. The graph shows a map of the interconnections between subjects I have written about.</description>
-    <pubDate>Sun, 30 Mar 2025 03:15:29 GMT</pubDate>
+    <description>This page is where I keep my notes. The graph on the right shows a map of the interconnections between subjects I have written about.</description>
+    <pubDate>Sun, 30 Mar 2025 04:09:02 GMT</pubDate>
   </item>
     </channel>
   </rss>

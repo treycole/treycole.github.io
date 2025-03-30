@@ -1,16 +1,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://treycole.me/notes/public/berry_phase</loc>
-    <lastmod>2025-03-30T03:15:29.000Z</lastmod>
-  </url><url>
     <loc>https://treycole.me/notes/public/</loc>
-    <lastmod>2025-03-30T03:15:29.000Z</lastmod>
+    <lastmod>2025-03-30T04:09:02.000Z</lastmod>
   </url><url>
-    <loc>https://treycole.me/notes/public/topological_obstructions</loc>
-    <lastmod>2025-03-30T04:01:56.788Z</lastmod>
+    <loc>https://treycole.me/notes/public/physics/berry_phase</loc>
+    <lastmod>2025-03-30T04:26:58.095Z</lastmod>
   </url><url>
-    <loc>https://treycole.me/notes/public/topological_quantum_chem</loc>
-    <lastmod>2025-03-30T04:01:09.845Z</lastmod>
+    <loc>https://treycole.me/notes/public/physics/</loc>
+    <lastmod>2025-03-30T04:25:17.486Z</lastmod>
   </url><url>
-    <loc>https://treycole.me/notes/public/wannier_functions</loc>
-    <lastmod>2025-03-30T03:56:13.710Z</lastmod>
+    <loc>https://treycole.me/notes/public/physics/topological_obstructions</loc>
+    <lastmod>2025-03-30T04:26:53.380Z</lastmod>
+  </url><url>
+    <loc>https://treycole.me/notes/public/physics/topological_quantum_chem</loc>
+    <lastmod>2025-03-30T04:26:55.487Z</lastmod>
+  </url><url>
+    <loc>https://treycole.me/notes/public/physics/wannier_functions</loc>
+    <lastmod>2025-03-30T04:26:50.704Z</lastmod>
   </url></urlset>
