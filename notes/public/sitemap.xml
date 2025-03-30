@@ -1,7 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://treycole.me/notes/berry_phase</loc>
-    <lastmod>2025-03-30T01:52:05.000Z</lastmod>
+    <loc>https://treycole.me/notes/public/berry_phase</loc>
+    <lastmod>2025-03-30T03:15:29.000Z</lastmod>
   </url><url>
-    <loc>https://treycole.me/notes/</loc>
-    <lastmod>2025-03-30T01:52:05.000Z</lastmod>
+    <loc>https://treycole.me/notes/public/</loc>
+    <lastmod>2025-03-30T03:15:29.000Z</lastmod>
+  </url><url>
+    <loc>https://treycole.me/notes/public/topological_obstructions</loc>
+    <lastmod>2025-03-30T04:01:56.788Z</lastmod>
+  </url><url>
+    <loc>https://treycole.me/notes/public/topological_quantum_chem</loc>
+    <lastmod>2025-03-30T04:01:09.845Z</lastmod>
+  </url><url>
+    <loc>https://treycole.me/notes/public/wannier_functions</loc>
+    <lastmod>2025-03-30T03:56:13.710Z</lastmod>
   </url></urlset>

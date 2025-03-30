@@ -3,6 +3,7 @@ title: Berry Phase
 draft: false
 tags:
   - Quantum Mechanics
+  - Condensed Matter
 ---
 
 The general definition of the Berry phase is a phase angle (from 0 to $2\pi$) that a complex vector acquires as it is transported through a path in its complex vector space. The idea was popularized by Sir Michael Berry in 1984.
