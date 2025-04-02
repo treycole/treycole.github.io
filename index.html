@@ -168,8 +168,8 @@
       justify-content: center;
     }
     #theme-toggle:hover {
-      background-color: #007bff;
-      color: #fff;
+      background-color: #ddd;
+      color: #03f4fb;
     }
 
     /* Dark Theme Overrides */
@@ -179,9 +179,10 @@
     }
     body.dark-theme .social-links a {
       color: #73a2d1;
+
     }
     body.dark-theme .social-links a:hover {
-      color: #007bff;
+      color: #03f4fb;
     }
    
 
@@ -192,23 +193,25 @@
     body.dark-theme footer {
       color: #ccc;
     }
+
     body:not(.dark-theme) #theme-toggle {
       background-color: transparent;
       border: 1px solid #f8f8f8;
       border-radius: 20px;
       color: #272935;
     }
-  
     body:not(.dark-theme) #theme-toggle:hover {
-      background-color: #007bff;
-      color: #fff;
+      background-color: #272935;
+      color: #03f4fb;
     }
 
     body.dark-theme a {
       color: #73a2d1;
     }
+
+    
     body.dark-theme a:hover {
-      color: #007bff;
+      color: #03f4fb;
     }
 
     ul.education {
@@ -240,13 +243,11 @@
 <body class="dark-theme">
   <!-- Navigation Bar -->
   <nav>
-    <div class="navbar-brand"></div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="https://notes.treycole.me">Notes</a></li>
       <!-- <li><a href="cv.pdf" target="_blank">CV</a></li> -->
-
     </ul>
     <div class="nav-right">
       <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-sun"></i></button>
